@@ -11,7 +11,7 @@
   * 변수는 var, 상수는 val로 선언
   > var a: Int = 10 // var 변수명: 자료형 = 값   
   > val b: Int = 20 // val 변수명: 자료형 = 값   
-  > :rocket: __코틀린은 자료형을 지정하지 않아도 형추론을 지원하여 자료형을 생략할 수 있다__ :rocket:   
+  > :rocket:__코틀린은 자료형을 지정하지 않아도 형추론을 지원하여 자료형을 생략할 수 있다__:rocket:   
   > var a = 10   
   > var b = 20 
   * 변수는 값을 변경 가능, 상수는 불가능 val은 자바의 final 키워드에 대응한다.
@@ -25,7 +25,7 @@
   >   > fun greet (str: String): Unit {   fun greet(str: String): Unit   
   >   > &nbsp; &nbsp; printlin(str)   
   >   > }   
-  >   > :rocket: __반환값이 Unit일 경우에는 반환 자료형을 생략할 수 있다.__ :rocket:     
+  >   > :rocket:__반환값이 Unit일 경우에는 반환 자료형을 생략할 수 있다.__:rocket:     
   >   > fun greet (str: String) {   
   >   > &nbsp; &nbsp; println(str)   
   >   > }   
@@ -68,8 +68,26 @@
     > 증가 범위 : .. 연산자 (ex: 1..3)   
     > 증감의 간격 : step 키워드   
     > 감소 범위 : downTo  키워드 (ex: 10 downTo 0)   
-  * while , do while : 자바와 동일   
-    
+  * while , do while : 자바와 동일      
+ 
+ ### 4.7 클래스
+-------------
+  * 클래스 선언 : 자바와 다르게 new 키워드 사용하지 않음
+  * 생성자 : 생성자 초기화 코드 작성시, constructor로 생성자를 표현.   
+    init 블록에 작성한 코드가 클래스를 인스턴스화할 때 가장 먼저 초기화됨. constructor 대신 사용 가능.   
+  * 프로퍼티 : 클래스의 속성을 사용하기 위해 멤버에 직접 접근하는 것   
+    자바의 getter/setter 역할을 할 수 있음.      
+  * 접근 제한자 : 변수나 함수를 공개하는 데 사용하는 키워드
+   * public : 전채 공개 default 값   
+   * private : 현재 파일 내부에서만 사용 가능   
+   * internal : 같은 모듈 내에서만 사용할 수 있다   
+   * protected : 상속받은 클래스에서 사용할 수 있다   
+  * 클래스의 상속: 코틀린에서 클래스는 기본적으로 상속이 금지되어있다. 가능하게 하려면 open 키워드를 클래스 선언 앞에 추가.   
+  * 내부 클래스 : inner를 사용. 내부 클래스는 외부 클래스에 대한 참조를 가지고 있음. 
+  * 추상 클래스 : 미구현 메서드가 포함된 클래스. 클래스와 미구현 메소드 앞에 abstract 키워드를 붙임.   
+     :bulb:추상 클래스는 직접 인스턴스화할 수 없고 다른 클래스가 상속하여 미구현 메서드를 구현해야 함.:bulb:
+ 
+ 
   
   
   
