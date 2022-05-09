@@ -106,8 +106,8 @@ class ListViewItem(val name: String, val phone: String){
 원래는 <br>
 <pre>
 <code>
-    <uses-permission android:name="android.permission.READ_CONTACTS"/>
-    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    uses-permission android:name="android.permission.READ_CONTACTS"
+    uses-permission android:name="android.permission.CALL_PHONE"
 </code>
 </pre>
 를 이용해서 실제 연락처를 만들어보고 싶었는데 너무 복잡해 보여서 천천히 
