@@ -101,7 +101,7 @@ class ListViewItem(val name: String, val phone: String){
 ### 실행결과
 -------------
 <img src="https://user-images.githubusercontent.com/78543382/167381071-229c8615-6b80-4d12-94ef-a38b1d6d26ca.png"/> <br>
-개발자 정보에서 연락처를 누르면 사진처럼 나오고 뒤로가기 하면 webview가 나옴<
+개발자 정보에서 연락처를 누르면 사진처럼 나오고 뒤로가기 하면 webview가 나옴<br>
 리스트에 저장한게 다 나와야하는데 하나만 나와서 천천히 코드 다시 보고 수정해야할듯
 
 
